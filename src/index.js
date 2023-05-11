@@ -4,8 +4,6 @@ import privateip from 'private-ip';
 const app = express();
 const port = process.env.PORT || 3000;
 
-console.log(summaly);
-
 const asyncWrapper = fn => {
     return (req, res, next) => {
         fn(req, res, next).catch(next);
